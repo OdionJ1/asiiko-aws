@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    asiiko-staging-db:
+        image: mysql:8.0
+        container_name: mySQLdb
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_ROOT_PASSWORD: 123456
+            MYSQL_USER: asiiko_admin
+            MYSQL_PASSWORD: Time1234
+            MYSQL_ROOT_HOST: '%'
